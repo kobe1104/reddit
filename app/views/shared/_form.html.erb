@@ -1,0 +1,12 @@
+<form action="<%=action%>" method="<%=method%>">
+  <%= auth_token %>
+  <%= render "shared/errors" %>
+  <!-- username , password, submit  -->
+  <label for="username">Username</label>
+  <input type="text" name="user[username]" id="username">
+  <br>
+  <label for="password">Password</label>
+  <input type="text" name="user[password]" id="password">
+
+  <input type="submit">
+</form>

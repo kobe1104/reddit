@@ -1,0 +1,9 @@
+
+<h1><%= @subs.title %></h1>
+<label for="description">description</label>
+<p>
+  <%= @subs.description %>
+</p>
+
+<%= link_to "make new post", sub_url, method: :post %>
+<%= link_to "edit", edit_sub_url, method: :get %>

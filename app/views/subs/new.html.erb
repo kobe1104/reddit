@@ -1,0 +1,11 @@
+<form action="<%= subs_url %>" method="post">
+  <%= auth_token %>
+  <%= render "shared/errors" %>
+  <label for="title">Title</label>
+  <input type="text" name="subs[title]" value="" id="title">
+  <br>
+  <label for="description">Description</label>
+  <input type="textarea" name="subs[description]" value="" id= "description">
+  <input type="submit" value="Submit!">
+
+</form>
